@@ -6,16 +6,16 @@ public class AvgScore {
 	private int len;
 	
 	void start() {
-		num = new double[10];
+		num = new double[5];
 		len = num.length;
 		this.input();
 		this.print();
 	}
 	void input() {
 		Scanner s = new Scanner(System.in);
+		System.out.println("가장 큰 점수와 가장 작은 점수를 제외한 평균을 구합니다.");
+		System.out.println("5개의 점수를 입력하세요. : ");
 		
-		System.out.println("10개의 점수를 입력받아 가장 큰 수와 가장 작은 수를 제외한 평균을 구합니다!");
-		System.out.println("====================================================");
 		
 		for(int i=0;i<len;i++) {
 			System.out.print(String.format("%02d", i+1) + "번 심사점수 입력: ");
